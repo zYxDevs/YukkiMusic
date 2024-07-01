@@ -340,6 +340,7 @@ class Call(PyTgCalls):
                 try:
                     await self.join_assistant(original_chat_id, chat_id)
                 except Exception:
+                    raise e
                 try:
                     await assistant.play(
                         chat_id,
