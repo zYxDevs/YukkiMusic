@@ -24,8 +24,6 @@ from pytgcalls.exceptions import AlreadyJoinedError, NoActiveGroupCall
 
 from pytgcalls.types import (
     MediaStream,
-    AudioQuality,
-    VideoQuality,
     Update,
     ChatUpdate,
     GroupCallParticipant,
@@ -668,15 +666,25 @@ class Call(PyTgCalls):
                 return
             await self.play(client, update.chat_id)
 
-        @self.one.on_update(filters.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.two.on_update(filters.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.three.on_update(filters.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.four.on_update(filters.call_participant(GroupCallParticipant.Action.UPDATED))
-        @self.five.on_update(filters.call_participant(GroupCallParticipant.Action.UPDATED))
+        @self.one.on_update(
+            filters.call_participant(GroupCallParticipant.Action.UPDATED)
+        )
+        @self.two.on_update(
+            filters.call_participant(GroupCallParticipant.Action.UPDATED)
+        )
+        @self.three.on_update(
+            filters.call_participant(GroupCallParticipant.Action.UPDATED)
+        )
+        @self.four.on_update(
+            filters.call_participant(GroupCallParticipant.Action.UPDATED)
+        )
+        @self.five.on_update(
+            filters.call_participant(GroupCallParticipant.Action.UPDATED)
+        )
         async def participants_change_handler(client, update: Update):
-            if not isinstance(update, GroupCallParticipant.Action.JOINED) and not isinstance(
-                update, GroupCallParticipant.Action.LEFT
-            ):
+            if not isinstance(
+                update, GroupCallParticipant.Action.JOINED
+            ) and not isinstance(update, GroupCallParticipant.Action.LEFT):
                 return
             chat_id = update.chat_id
             users = counter.get(chat_id)
