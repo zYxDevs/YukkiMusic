@@ -1,4 +1,4 @@
-## Here Is Pytgcall 2.0.2 Everything Works but in logs some unknown errors from Pyrogram and pytgcall occures
+## Here Is Pytgcall 2.0.2 Everything Works but in logs some unknown errors from Pyrogram and pytgcall
 
 <img src="https://telegra.ph/file/c0e014ff34f34d1056627.png" align="right" width="200" height="200"/>
 
