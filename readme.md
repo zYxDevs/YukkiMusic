@@ -1,4 +1,4 @@
-## Here Is Pytgcall 2.0.2 Everything Works but in logs some unknown errors from Pyrogram and pytgcall
+## Here Is Pytgcall Latest Everything Works but in logs some unknown errors from Pyrogram and pytgcall
 
 <img src="https://telegra.ph/file/c0e014ff34f34d1056627.png" align="right" width="200" height="200"/>
 
@@ -16,7 +16,7 @@
 
 <h4>Click the button below to deploy Yukki Music Bot on Heroku!</h4>    
 <h4>If You show any error like failed to app Creation Then fork and deploy </h4>
-<a href="https://dashboard.heroku.com/new?template=https://github.com/TheTeamVivek/YukkiMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/TheTeamVivek/YukkiMusic/blob/dev"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200""/></a>
 
 
 ## 🖇 VPS Deployment
