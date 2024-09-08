@@ -9,6 +9,7 @@
 #
 import os
 import re
+import asyncio
 from typing import Union
 
 from pyrogram.enums import MessageEntityType
