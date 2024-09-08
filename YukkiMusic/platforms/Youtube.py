@@ -132,6 +132,8 @@ class YouTubeAPI:
         proc = await asyncio.create_subprocess_exec(
             "yt-dlp",
             "-g",
+            "--username", "oauth2", 
+            "--password", "", 
             "-f",
             "best",
             f"{link}",
@@ -255,6 +257,8 @@ class YouTubeAPI:
             ydl_optssx = {
                 "format": "bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
+                "username" : "oauth2",
+                "password": "",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
@@ -272,6 +276,8 @@ class YouTubeAPI:
             ydl_optssx = {
                 "format": "bestvideo+bestaudio",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
+                "username" : "oauth2",
+                "password": "",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
@@ -338,6 +344,8 @@ class YouTubeAPI:
                 proc = await asyncio.create_subprocess_exec(
                     "yt-dlp",
                     "-g",
+                    "--username", "oauth2", 
+                    "--password", "", 
                     "-f",
                     "best",
                     f"{link}",
