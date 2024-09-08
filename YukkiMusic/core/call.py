@@ -139,7 +139,7 @@ class Call(PyTgCalls):
         try:
             await _clear_(chat_id)
             await assistant.leave_call(chat_id)
-        except:
+        except Exception:
             pass
 
     async def get_participant(self, chat_id: int):
