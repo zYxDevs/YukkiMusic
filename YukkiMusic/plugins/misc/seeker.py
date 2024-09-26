@@ -73,9 +73,6 @@ async def timer():
             db[chat_id][0]["played"] += 1
 
 
-asyncio.create_task(timer())
-
-
 async def process_mute_warnings():
     while True:
         await asyncio.sleep(2)
@@ -194,5 +191,6 @@ async def markup_timer():
                 continue
 
 
+asyncio.create_task(timer())
 asyncio.create_task(markup_timer())
 asyncio.create_task(process_mute_warnings())
