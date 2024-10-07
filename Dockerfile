@@ -2,6 +2,7 @@ FROM python:3.12.7-slim
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends curl ffmpeg git build-essential libssl-dev \
+    && apt-get install -y zlib1g-dev libjpeg-dev libtiff5-dev libopenjp2-7 libtiff-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
